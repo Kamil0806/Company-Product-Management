@@ -1,0 +1,75 @@
+Implement a program that manages the production line of a company and implements the concept of a company and the products it produces each company produces.
+
+The Product class represents a product and has the following fields and methods:
+
+Field price: represents the price of the product and is double
+
+Field name: represents the name of the product and is alphanumeric
+
+Field code: represents the code of the product and consists of 2
+The product code is a code that contains 2 characters and 6 numbers (it is alphanumeric).
+
+A structurer method without arguments, which initializes the fields of the class.
+
+Structuring method with arguments. The arguments are as many as the fields. The constructor sets
+initializes the fields of the class based on the values of the definitions.
+
+get() methods, which return the private fields of the class
+
+set() methods, which assign values to the private fields of the class.
+
+Method toString(), which returns the values of all fields in String format.
+
+Method readProduct(), which reads from the keyboard the information of a product and assigns the values to the fields of the object calling the method.
+
+o public void readProduct()
+
+Method compare(Product p), which compares two products and checks which one
+which of the two is more expensive based on price.
+o public boolean compare(Product p)
+
+Create any other method you need.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The Company class has the following fields and methods:
+
+Field companyName (company name)
+
+Field products of type ArrayList, in which the products of each company will be stored. This field will contain the company's data.
+
+Constructor without arguments.
+o public Company()
+
+Constructor with arguments, setting an initial value to the companyName and products.
+o public Company(String companyName, ArrayList products)
+
+Method getNumOfProducts(), which returns the number of products.
+o public int getNumOfProducts()
+
+Set and get methods for all fields.
+
+Method toString(), which returns the data of a Company object in the form of a string
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Create a ProductManagement class that contains a main method and a search method. The main method will implement the following
+
+1. Create objects of the Company class by reading the data from from the keyboard. For each company, the user should provide the name of the company
+company name and the products it produces. For each product the user should give the name, the code and the price. The user shall stop providing data when
+provide the alphanumeric 'exit' as the name of the company.
+
+2. Check for negative values and blank values and if they are negative or blank (e.g. has simply pressed space or tab) are ignored and the user is user is informed to set another value. Also check for the code
+if it meets the criteria set.
+
+3. Display a message related to the number of products each company produces.
+
+4. Display a message about which product is the most expensive among the which product is the most expensive among the products of all the companies.
+
+5. Ask the user to provide a product name and display if
+to ask the user to indicate if it exists. The user can give as many product names as desired. The search
+product search stops when the user gives the alphanumeric quit.
+
+Implement a search method that takes a product name as
+parameter and returns whether or not it has been found among all products of all products of all
+companies.
+o public static boolean search(ArrayList al, String name)
